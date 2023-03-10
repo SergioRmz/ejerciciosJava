@@ -113,6 +113,19 @@ public class Programas {
 		System.out.println(msg);
 	}
 
+	static void areaCubo() {
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("Introduce uno de los lados del cubo: ");
+		double lado = myScanner.nextDouble();
+		myScanner.close();
+		
+		double areaSuperficial = 6 * (Math.pow(lado,2));
+		
+		String msg = MessageFormat.format("El area superficial del cubo es de: {0}", areaSuperficial);
+		System.out.println(msg);
+		
+	}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
